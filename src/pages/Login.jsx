@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { loginUser } from '../services/Api';
 import { saveToken } from '../utils/auth';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -50,7 +51,7 @@ const Login = () => {
       >
         Login
       </button>
-      <span className='text-center'>Belum punya akun? <a href="/register" className='text-blue-500 hover:underline font-semibold'>Daftar disini</a></span>
+      <span className='text-center'>Belum punya akun? <Link to="/register" className='text-blue-500 hover:underline font-semibold'>Daftar disini</Link></span>
     </form>
   </div>
   
