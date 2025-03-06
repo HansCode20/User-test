@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { loginUser } from '../services/Api';
 import { saveToken } from '../utils/auth';
-import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const [username, setUsername] = useState('');
