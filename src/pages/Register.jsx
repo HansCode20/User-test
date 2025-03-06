@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { registerUser } from '../services/Api';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -112,7 +113,7 @@ const Register = () => {
         >
           Register
         </button>
-        <span className='flex justify-center items-center gap-2'>Sudah punya akun? <a href="/login" className='text-blue-500 hover:underline font-semibold'>Login</a></span>
+        <span className='flex justify-center items-center gap-2'>Sudah punya akun? <Link to="/login" className='text-blue-500 hover:underline font-semibold'>Login</Link></span>
       </form>
     </div>
   );
